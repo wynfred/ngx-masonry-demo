@@ -2,6 +2,8 @@
 
 Demo app for [ngx-masonry](https://github.com/gethinoakes/ngx-masonry)
 
+[View a live demo here](https://ngx-masonry-demo.herokuapp.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
 ## Development server
