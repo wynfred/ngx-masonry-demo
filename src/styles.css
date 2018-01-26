@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.masonry-demo {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ngx-masonry {
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  width: 40%;
+  height: 50px;
+  background: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 50px;
+}
+
+.masonry-item {
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+  background-size: cover;
+  width: 340px;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+}
+
