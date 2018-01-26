@@ -9,6 +9,29 @@ body {
   margin: 0 auto;
 }
 
+.links {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+  flex-basis: 80%;
+	color: #009FB7;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.links a:hover {
+	color: #FE4A49;
+}
+
+.links iframe {
+  flex-basis: 50%;
+}
+
 ngx-masonry {
   margin: 0 auto;
 }
