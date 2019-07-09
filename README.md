@@ -1,6 +1,6 @@
 # NgxMasonryDemo
 
-Demo app for [ngx-masonry](https://github.com/gethinoakes/ngx-masonry)
+Demo app for [ngx-masonry](https://github.com/wynfred/ngx-masonry)
 
 [View a live demo here](https://ngx-masonry-demo.herokuapp.com/)
 
