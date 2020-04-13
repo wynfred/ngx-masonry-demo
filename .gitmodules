@@ -1,0 +1,3 @@
+[submodule "projects/ngx-masonry"]
+	path = projects/ngx-masonry
+	url = ../ngx-masonry
