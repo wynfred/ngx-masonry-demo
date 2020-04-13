@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     fitWidth: true
   };
 
-  @ViewChild(NgxMasonryComponent, {static: false}) masonry: NgxMasonryComponent;
+  @ViewChild(NgxMasonryComponent) masonry: NgxMasonryComponent;
 
   masonryImages: string[];
   limit = 15;

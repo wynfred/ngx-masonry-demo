@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -41,7 +41,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -132,6 +131,11 @@
           "options": {
             "tsConfig": "projects/ngx-masonry/tsconfig.lib.json",
             "project": "projects/ngx-masonry/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-masonry/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -155,6 +159,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-masonry-demo"
+    }
+  },
+  "defaultProject": "ngx-masonry-demo",
+  "cli": {
+    "analytics": "dea13b54-3a8b-483a-80bd-9adf24fda6cd"
+  }
 }
