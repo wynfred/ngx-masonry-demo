@@ -11,11 +11,7 @@ import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
 })
 export class AppComponent implements OnInit {
   public masonryOptions: NgxMasonryOptions = {
-    transitionDuration: '0.2s',
     gutter: 20,
-    resize: true,
-    initLayout: true,
-    fitWidth: true
   };
 
   @ViewChild(NgxMasonryComponent) masonry: NgxMasonryComponent;
@@ -139,5 +135,9 @@ export class AppComponent implements OnInit {
     this.masonryImages.splice(0, 0, this.dummyPictures[0]);
     this.masonry.reloadItems();
     this.masonry.layout();
+  }
+
+  removeImage() {
+    this.masonryImages.pop();
   }
 }

@@ -7,11 +7,12 @@
 
   <ngx-masonry [options]="masonryOptions" style="width: 90vw;">
     <div ngxMasonryItem *ngFor="let picture of masonryImages" style="width: 30%;">
-      <img src="{{picture}}" width="100%">
+      <img [src]="picture" width="100%">
     </div>
   </ngx-masonry>
 
   <button *ngIf="limit < 100" (click)="showMoreImages()">Show More Images</button>
   <button *ngIf="limit < 100" (click)="insertImage()">Insert Image</button>
+  <button *ngIf="masonryImages" (click)="removeImage()">Remove Image</button>
   <h2 *ngIf="limit >= 100">No More Images</h2>
 </div>
