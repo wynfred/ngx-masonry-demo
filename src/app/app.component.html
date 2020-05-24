@@ -5,9 +5,10 @@
 	</div>
   <h1>Ngx Masonry Demo</h1>
 
+  <button *ngIf="limit < 100" (click)="prependImage()">Prepend Image</button>
   <ngx-masonry [options]="masonryOptions" style="width: 90vw;">
-    <div ngxMasonryItem *ngFor="let picture of masonryImages" style="width: 30%;">
-      <img [src]="picture" width="100%">
+    <div ngxMasonryItem [prepend]="image[0]" *ngFor="let image of masonryImages" style="width: 30%;">
+      <img [src]="image[1]" width="100%">
     </div>
   </ngx-masonry>
 
