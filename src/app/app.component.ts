@@ -138,11 +138,15 @@ export class AppComponent implements OnInit {
   }
   prependImage() {
     const image = this.dummyPictures[50];
-    image[0] = true
+    image[0] = true;
     this.masonryImages.push(image);
   }
 
   removeImage() {
     this.masonryImages.pop();
+  }
+
+  itemsLoaded() {
+    console.log('itemsloaded');
   }
 }

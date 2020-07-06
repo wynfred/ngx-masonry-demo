@@ -6,7 +6,7 @@
   <h1>Ngx Masonry Demo</h1>
 
   <button *ngIf="limit < 100" (click)="prependImage()">Prepend Image</button>
-  <ngx-masonry [options]="masonryOptions" style="width: 90vw;" [ordered]="true">
+  <ngx-masonry [options]="masonryOptions" style="width: 90vw;" [ordered]="true" (itemsLoaded)="itemsLoaded()">
     <div ngxMasonryItem [prepend]="image[0]" *ngFor="let image of masonryImages;index as idx" style="width: 30%;">
       <div> {{idx}} </div>
       <img [src]="image[1]" width="100%">
