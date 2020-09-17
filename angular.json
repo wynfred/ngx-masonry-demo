@@ -19,6 +19,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "allowedCommonJsDependencies": [
+              "ngx-masonry",
+              "masonry-layout"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
