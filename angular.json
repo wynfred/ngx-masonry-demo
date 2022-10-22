@@ -145,7 +145,6 @@
       }
     }
   },
-  "defaultProject": "ngx-masonry-demo",
   "cli": {
     "analytics": "dea13b54-3a8b-483a-80bd-9adf24fda6cd"
   }
